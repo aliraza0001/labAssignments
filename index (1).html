@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//     question no 1 
+//     Q1: Write a program to change this function as anonymous function.
+    // function sum(va,vb) {
+    // return va + vb;
+    // }
+// sum( 5, 20);
+//    var myFunc = function sum(a, b){
+//             var sumNum = a + b;
+//             return sumNum;
+//    } 
+//    alert(myFunc(5, 45))
+//    Question no 2
+//         Q2: Write a program to solve this issue NaN, using default function parameters.
+//         let add = ( a, b ) {
+//         return a + b;
+//         }
+        //         add()
+        function add(a=10,b=5){
+        let add = (a + b)
+        return add;
+        }
+        console.log(add())
+
+        // question no 3
+
+        //  Q3: Write a program to show this array elements, using for of loop.
+        // let cities = ["Karachi","Lahore","Islamabad","Quetta","Multan"];
+         let cities = ["karachi", "Lahore","Islamabad","Quetta","Multan","usmanabad"]
+        // Example: Karachi
+        // Lahore
+        // Islamabad
+        // Quetta
+        // Multan
+       // for(let city of cities){
+         ///   console.log(`THe city is ${city} </br>`)
+              //  }
+             //   Question no 4 
+            //  Q4: Write a program to show object key and value both, using for in loop.
+                let studentData = {
+                name:"Arfa karim",
+                age:16,
+                class:"Computer Science",
+                gender : "female"
+                }
+                // Example: name Arfa karim
+                // age 16
+            // for(let i in studentData){
+            //     console.log(i + " "+studentData[i]);
+            // }
+            //Q5: Write a program to sequence numbers of this array.
+            let arraySort = [ 5,7,2,8,3,1,9,0,5 ];
+                        console.log(arraySort.sort().reverse())
+              //  Write a program that show username and function status, using Generator function.
+                 // Use this array of object
+                 let obj = [
+                {name: "John"},
+                {name:"Carson"}
+                ]
+                // Example: username John status false
+                // username Carson status true
+                function* data(){
+                    yield obj[0].name
+                    return obj[1].name
+                }
+                let abc = data()
+                    // console.log(abc.next());
+                    // console.log(abc.next());
+
+
+                // Q8: Write a program to remove repetition elements of this array, using filter.
+                //Example: [“A,"B","C","D","E","F","G","H"];
+                 let arrSorted = ["A","B","A","C","D", null, undefined, "","B","E","F","A","G","D","H"];
+                var reverse =  arrSorted.reverse()
+                console.log(reverse);
+                var ages = [32, 33, 16, 40];
+                 function checkArray() {
+                     for(var i = 0; i< arrSorted.length; i++){
+                        if(arrSorted[i] === arrSorted[i]){
+
+                        }
+                return abc;
+                }
+                 }
+                function myFunction() {
+                abc  = arrSorted.filter(arrSorted);
+                }
+
+
+
+                // //Q7: Make a copy of this object with both of ES5 and ES6.
+                // let student = {
+                // name:"Arfa karim",
+                // age:16,
+                // class:"Computer Science"
+                // }
+        //         function* rainbow() {
+        //     yield obj[0].name;
+        //     return obj[1].name;
+        // }
+        //   var colors = rainbow()
+        // // console.log(colors)
+        // console.log(colors.next())
+        // console.log(colors.next())
+
+
+
+  //  Q6: Write a program to remove repetition elements of this array, using ( filter ).
+let arr = ["A","B","C","D","B","E","F","A","G","D","H"];
+
+
+var f = arr.filter((charter,index,arrays) => arr.indexOf(charter) === index)
+
+console.log(f)
+
+
+//Q7: Write a program to change this function as a fat arrow function.
+function greeting(val) {
+return val;
+}
+
+greeting("Welcome");
+var abc = (fg) => console.log(fg) 
+abc("Welcome")
+
+
+//Q8: Write a program to show only the username of this object, using (object destructuring ).
+
+function getUser () {
+return {
+username:"Arfa karim",
+age:16,
+class:"Computer Science"
+}
+}
+
+
+
+var {username, age} = getUser();
+console.log(username,age)
+//Expected: Arfa karim
+
+
+//Expected: ["A","B","C","D","E","F","G","H"];
+
+
+// var hi = [1,2,3,4,5,6,7]
+
+// prototype.this.multiplyBytwo = function(){
+
+// };
+
+// function multiplyBytwo(){
+//     for(var i = 0; i<hi.length; i++){
+//         hi[i] * 2
+//     }
+// }
+
+
+
+
+
+
+
+
+
+        // // Prime Number
+        //         function isPrime(number) {
+        //     if (number == 0 || number == 1) return false;
+        //     let root = Math.floor(Math.sqrt(number));
+        //     for (let i = 2; i <= root; i++) {
+        //         if (number % i == 0) {
+        //             return false;
+        //         }
+        //     }
+        //     return true;
+        // }
+        // console.log(isPrime(11744737)); //true
+        // console.log(isPrime(37547546)); //false
+
+   
+   
+    </script>
+</body>
+</html>
